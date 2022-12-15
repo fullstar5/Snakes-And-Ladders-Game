@@ -131,6 +131,7 @@ public class Puppet extends Actor
 
 
     // Animation: Move on connection
+    // if it rolled lowest and reach downward path symbol
     if (currentCon != null && nbSteps == 0 && !(isLowest && currentCon.cellEnd - currentCon.cellStart < 0)) {
       int x = gamePane.x(y, currentCon);
       setPixelLocation(new Point(x, y));
